@@ -16,7 +16,7 @@ export const useTextScale = (ref, deps) => {
     } else {
       setScale(1);
     }
-  }, deps);
+  }, [ref, deps]);
 
   return scale;
 };
